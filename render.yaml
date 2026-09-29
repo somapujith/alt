@@ -1,0 +1,165 @@
+# Render Blueprint — backend API, Celery worker, Postgres, Redis.
+#
+# The frontend is NOT here: it deploys to Vercel (see Project/frontend/
+# vercel.json). Only the Python side and its datastores live on Render.
+#
+# Deploy: Render Dashboard > New > Blueprint > point at this repo. Render reads
+# this file and creates all four services in one pass.
+#
+# This file sits at the REPO root, which Render requires. The app itself lives
+# one level down in Project/ (Lab1/ is the root's other occupant), so every
+# path below is Project/-prefixed and the start commands cd into it.
+#
+# TWO THINGS MUST BE SET BY HAND after the first deploy, because neither value
+# exists until the services are created:
+#   1. MODEL_URL on both `emotion-api` and `emotion-worker` — where to download
+#      the ~479MB model artifact from. It is gitignored, so it is NOT in the
+#      repo Render clones. See Project/scripts/fetch_model.sh.
+#   2. FRONTEND_ORIGIN on `emotion-api` — your Vercel production URL.
+#
+# Why `plan: starter` and not `free`: the RoBERTa weights are ~500MB on their
+# own, before torch's runtime allocations. A 512MB free instance OOMs during
+# model load. Starter (2GB) is the smallest plan this app fits in.
+
+services:
+  # ---------------------------------------------------------------- API
+  - type: web
+    name: emotion-api
+    runtime: python
+    plan: starter
+    region: oregon
+    branch: main
+    # Repo root is the build context. `ml/` is a sibling of `backend/` inside
+    # Project/ and the backend imports from it (app/core/ml_path.py walks up to
+    # find it), so the build must run from Project/, not from Project/backend/.
+    buildCommand: "./Project/scripts/render_build.sh"
+    startCommand: "cd Project/backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      # backend/app is on the path via the `cd Project/backend` in startCommand;
+      # ml/ is found by ml_path.py walking up from backend/app/core/.
+      - key: PYTHONUNBUFFERED
+        value: "1"
+
+      # Model. MODEL_DIR is absolute because Render's working directory differs
+      # between build (repo root) and start (Project/backend/, per startCommand).
+      - key: MODEL_DIR
+        value: /opt/render/project/src/Project/ml/artifacts/model-v1
+      - key: MODEL_VERSION
+        value: model-v1
+      - key: MODEL_MAX_LENGTH
+        value: "128"
+
+      # Where render_build.sh downloads the model artifact from. MUST be set in
+      # the dashboard — see Project/scripts/fetch_model.sh for accepted formats.
+      - key: MODEL_URL
+        sync: false
+
+      # SHAP is the expensive endpoint; a week-long cache is safe because its
+      # output is deterministic per (text, model version).
+      - key: SHAP_MAX_EVALS
+        value: "200"
+      - key: SHAP_CACHE_TTL_SECONDS
+        value: "604800"
+
+      # Datastores — wired automatically from the definitions at the bottom.
+      # Render's Postgres connection string is postgres://; SQLAlchemy needs the
+      # asyncpg driver spelled out, so app/core/db.py normalizes the scheme.
+      - key: DATABASE_URL
+        fromDatabase:
+          name: emotion-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: emotion-redis
+          property: connectionString
+      - key: CELERY_BROKER_URL
+        fromService:
+          type: redis
+          name: emotion-redis
+          property: connectionString
+      - key: CELERY_RESULT_BACKEND
+        fromService:
+          type: redis
+          name: emotion-redis
+          property: connectionString
+
+      # Your Vercel URL, e.g. https://emotion-feedback.vercel.app
+      # No trailing slash — it is compared against the browser's Origin header,
+      # which never has one.
+      - key: FRONTEND_ORIGIN
+        sync: false
+
+      - key: API_V1_PREFIX
+        value: /api
+
+  # ------------------------------------------------------------- WORKER
+  # Celery consumer for CSV batch uploads. Separate service because a batch of
+  # 5000 rows would otherwise block the API's request threadpool for minutes.
+  # It loads its own copy of the model (lazily, once per process), which is why
+  # it also needs starter-tier memory and its own MODEL_URL.
+  - type: worker
+    name: emotion-worker
+    runtime: python
+    plan: starter
+    region: oregon
+    branch: main
+    buildCommand: "./Project/scripts/render_build.sh"
+    startCommand: "cd Project/backend && celery -A app.services.celery_app worker --loglevel=info --concurrency=1"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: MODEL_DIR
+        value: /opt/render/project/src/Project/ml/artifacts/model-v1
+      - key: MODEL_VERSION
+        value: model-v1
+      - key: MODEL_MAX_LENGTH
+        value: "128"
+      - key: MODEL_URL
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: emotion-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: emotion-redis
+          property: connectionString
+      - key: CELERY_BROKER_URL
+        fromService:
+          type: redis
+          name: emotion-redis
+          property: connectionString
+      - key: CELERY_RESULT_BACKEND
+        fromService:
+          type: redis
+          name: emotion-redis
+          property: connectionString
+
+  # -------------------------------------------------------------- REDIS
+  # Celery broker + result backend + SHAP cache. The app uses logical DBs 0/1/2
+  # locally; Render's managed Redis exposes a single DB, so all three share it.
+  # Keys do not collide: Celery namespaces its own, and SHAP keys are prefixed.
+  - type: redis
+    name: emotion-redis
+    plan: starter
+    region: oregon
+    # Only our own services connect, over Render's private network.
+    ipAllowList: []
+    # SHAP cache entries are recomputable; evicting the oldest under pressure is
+    # correct. Celery's own keys are short-lived.
+    maxmemoryPolicy: allkeys-lru
+
+databases:
+  # ----------------------------------------------------------- POSTGRES
+  - name: emotion-db
+    databaseName: emotion_feedback
+    user: postgres
+    plan: basic-256mb
+    region: oregon
