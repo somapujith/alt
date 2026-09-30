@@ -1,0 +1,108 @@
+========== DATASET ==========
+                                                               text category
+0                      The project meeting has been moved to Monday      Ham
+1                         Can you call me when you reach the office      Ham
+2                     I have attached the documents for your review      Ham
+3                     Please send me the report by tomorrow morning      Ham
+4                          Are we still meeting for lunch on Friday      Ham
+5                          Thanks for your help with the assignment      Ham
+6                 The class schedule for next week has been updated      Ham
+7           Let me know if you need any changes to the presentation      Ham
+8                   I will be late to the office because of traffic      Ham
+9          Happy birthday and have a wonderful day with your family      Ham
+10                     Could you review my code before the deadline      Ham
+11                                Dinner is ready so come home soon      Ham
+12                  The exam results will be announced on Wednesday      Ham
+13          Please find the minutes of yesterday's meeting attached      Ham
+14                        I will pick up the kids from school today      Ham
+15                Remember to submit the lab record before Thursday      Ham
+16                  Do you want to join us for a movie this weekend      Ham
+17          The team discussed the budget in this morning's meeting      Ham
+18                 Call me when you are free to talk about the trip      Ham
+19                     Thank you for the notes from today's lecture      Ham
+20                      Exclusive offer buy now and get a free gift     Spam
+21  Free entry in our weekly contest text win to receive your prize     Spam
+22     You have been selected for a free vacation call now to claim     Spam
+23           Congratulations you have won a cash prize claim it now     Spam
+24           Limited time offer get free tickets click the link now     Spam
+25         Win a brand new phone text WIN to enter the free contest     Spam
+26     Urgent your account has won a bonus reward call now to claim     Spam
+27                   Buy one get one free exclusive deal only today     Spam
+28   You are the lucky winner of a free holiday click here to claim     Spam
+29         Get cheap loans instantly with no credit check apply now     Spam
+30        Claim your free gift card now limited offer expires today     Spam
+31   Congratulations you have been selected to receive a free prize     Spam
+32    Earn extra cash from home with this exclusive offer click now     Spam
+33                     Free entry to win a luxury vacation text now     Spam
+34             Special discount buy now and win a free gift voucher     Spam
+35       Your mobile number has won a cash reward call now to claim     Spam
+36       Act now to receive your free bonus offer before it expires     Spam
+37            Winner selected claim your exclusive free prize today     Spam
+38     Cheap deal on designer watches order now and get a free gift     Spam
+39                    Urgent call now to claim your free cash prize     Spam
+
+Class distribution:
+category
+Ham     20
+Spam    20
+Name: count, dtype: int64
+
+Training samples: 28 | Testing samples: 12
+
+========== PREDICTION RESULTS ==========
+                                                               Text Actual Predicted
+0                         I will pick up the kids from school today    Ham       Ham
+1           Let me know if you need any changes to the presentation    Ham       Ham
+2                       Exclusive offer buy now and get a free gift   Spam      Spam
+3                          Are we still meeting for lunch on Friday    Ham       Ham
+4             Winner selected claim your exclusive free prize today   Spam      Spam
+5    You are the lucky winner of a free holiday click here to claim   Spam      Spam
+6      Cheap deal on designer watches order now and get a free gift   Spam      Spam
+7                 The class schedule for next week has been updated    Ham       Ham
+8                      Could you review my code before the deadline    Ham       Ham
+9   Free entry in our weekly contest text win to receive your prize   Spam      Spam
+10   Congratulations you have been selected to receive a free prize   Spam      Spam
+11                  The exam results will be announced on Wednesday    Ham       Ham
+
+========== ACCURACY ==========
+Accuracy: 1.0
+
+========== CLASSIFICATION REPORT ==========
+              precision    recall  f1-score   support
+
+         Ham       1.00      1.00      1.00         6
+        Spam       1.00      1.00      1.00         6
+
+    accuracy                           1.00        12
+   macro avg       1.00      1.00      1.00        12
+weighted avg       1.00      1.00      1.00        12
+
+========== CONFUSION MATRIX ==========
+             Predicted Ham  Predicted Spam
+Actual Ham               6               0
+Actual Spam              0               6
+
+========== TOP 5 INDICATIVE WORDS PER CLASS ==========
+Ham:
+  the          log P(w|Ham) = -2.961  (log-ratio vs other class = 1.550)
+  meeting      log P(w|Ham) = -4.139  (log-ratio vs other class = 1.470)
+  me           log P(w|Ham) = -4.139  (log-ratio vs other class = 1.470)
+  when         log P(w|Ham) = -4.427  (log-ratio vs other class = 1.183)
+  of           log P(w|Ham) = -4.427  (log-ratio vs other class = 1.183)
+Spam:
+  now          log P(w|Spam) = -3.045  (log-ratio vs other class = 2.481)
+  claim        log P(w|Spam) = -3.664  (log-ratio vs other class = 1.862)
+  offer        log P(w|Spam) = -4.000  (log-ratio vs other class = 1.525)
+  win          log P(w|Spam) = -4.000  (log-ratio vs other class = 1.525)
+  free         log P(w|Spam) = -3.307  (log-ratio vs other class = 1.525)
+
+========== PREDICTIONS ON NEW MESSAGES ==========
+Message   : Win a free prize now click to claim your reward
+Predicted : Spam   [P(Ham)=0.000, P(Spam)=1.000]
+
+Message   : Please review the attached report before the meeting
+Predicted : Ham   [P(Ham)=1.000, P(Spam)=0.000]
+
+Message   : Can you send me the lecture notes tomorrow
+Predicted : Ham   [P(Ham)=1.000, P(Spam)=0.000]
+
