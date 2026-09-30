@@ -1,0 +1,46 @@
+Dataset Preview
+                                                text     label
+0  The staff at my branch were friendly and resol...  Positive
+1     Mobile app is fast and the interface is clean.  Positive
+2  I got my home loan approved quickly with minim...  Positive
+3  Great service, the relationship manager always...  Positive
+4  Opening a savings account online took less tha...  Positive
+
+Accuracy: 0.3333333333333333
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Negative       0.38      0.38      0.38         8
+    Positive       0.29      0.29      0.29         7
+
+    accuracy                           0.33        15
+   macro avg       0.33      0.33      0.33        15
+weighted avg       0.33      0.33      0.33        15
+
+Confusion Matrix:
+[[3 5]
+ [5 2]]
+
+Actual vs Predicted:
+      Actual Predicted
+0   Positive  Positive
+1   Negative  Positive
+2   Negative  Positive
+3   Negative  Negative
+4   Positive  Negative
+5   Negative  Negative
+6   Negative  Negative
+7   Negative  Positive
+8   Negative  Positive
+9   Positive  Positive
+10  Positive  Negative
+11  Positive  Negative
+12  Negative  Positive
+13  Positive  Negative
+14  Positive  Negative
+
+Predictions on New Reviews:
+The customer support was excellent. --> Positive
+Hidden charges were very disappointing. --> Positive
+Internet banking is easy to use. --> Negative
