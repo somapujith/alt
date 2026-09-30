@@ -1,48 +1,72 @@
-Dataset shape: (60, 3)
+Dataset shape: (180, 3)
 Class distribution:
  Sentiment
-Positive    20
-Negative    20
-Neutral     20
+Positive    60
+Negative    60
+Neutral     60
 Name: count, dtype: int64 
 
-Train size: 48  Test size: 12
+Train size: 144  Test size: 36
 
 Predictions on the test set:
-                                                                                 Review   Actual Predicted
-      Refund process was a nightmare, and the replacement they sent was also defective. Negative   Neutral
-     Excellent sound quality for the price, and the Bluetooth connection is rock solid. Positive  Positive
-                                           Email us at support@shop.com for assistance.  Neutral   Neutral
-            Please refer to the user manual for instructions on how to pair the device.  Neutral   Neutral
-                                                             Camera quality is 10/10!!! Positive   Neutral
-          The shoes fell apart after a month of use. Cheap material and poor stitching. Negative  Negative
-              Great value for money. The fabric is soft and the stitching is very neat. Positive  Negative
-                       Extremely slow laptop that freezes constantly. Regret buying it. Negative  Positive
-                                         Battery backup is good, but delivery was late.  Neutral  Negative
-         The product comes with a two pin plug and requires a standard 230 volt socket.  Neutral  Negative
-Fantastic headphones, the sound is crisp and the bass is deep. Totally worth the money! Positive  Negative
-  Received a damaged and dirty box, the item inside was scratched. Horrible experience. Negative   Neutral 
+                                                                                      Review   Actual Predicted
+           Refund process was a nightmare, and the replacement they sent was also defective. Negative   Neutral
+                     The package contains a phone, a charger, a USB cable and a user manual.  Neutral   Neutral
+           Super happy with this vacuum cleaner. It picks up everything and is really quiet. Positive  Positive
+       Received a damaged and dirty box, the item inside was scratched. Horrible experience. Negative  Negative
+                       The laptop is slow, noisy and the keys are hard. Not worth the money. Negative  Negative
+                  The tablet freezes all the time and the touch is laggy. Very disappointed. Negative  Negative
+     Fantastic headphones, the sound is crisp and the bass is deep. Totally worth the money! Positive  Negative
+                                           The book has 320 pages and was published in 2019.  Neutral  Negative
+                         The moisturiser is wonderful, my skin feels soft and fresh all day. Positive  Positive
+                   Really nice fabric and perfect stitching, exactly what I was looking for. Positive  Positive
+                                   Returns are accepted within 7 days if the seal is intact.  Neutral   Neutral
+                          Excellent product and fast delivery. Very happy with the purchase! Positive  Positive
+             The best earbuds I have used so far, crystal clear sound and a comfortable fit. Positive  Positive
+              Terrific book, well written and impossible to put down. I loved every chapter. Positive   Neutral
+                Not worth the price at all. It is flimsy, ugly and stopped charging quickly. Negative  Negative
+               Total waste of money, it stopped working after a week and support ignores me. Negative  Negative
+                               Please download the installation guide from the support page.  Neutral  Negative
+               Bad experience overall, the product looks nothing like the photos. Regret it. Negative  Negative
+                   Excellent camera and lovely design. This is the best phone in this range. Positive  Positive
+                      The headphones use Bluetooth 5.0 and have a range of about ten metres.  Neutral  Positive
+             I hate this vacuum cleaner. It is weak, loud and the dust bag tears every time. Negative  Negative
+                               Use the coupon code SAVE10 at checkout to apply the discount.  Neutral  Positive
+                            Extremely slow laptop that freezes constantly. Regret buying it. Negative  Negative
+              The product is defective and the instructions are confusing. Waste of my time. Negative  Negative
+The battery lasts two full days and the screen is gorgeous. Very satisfied with my purchase. Positive   Neutral
+               Cash on delivery is available for orders above 500 rupees in selected cities.  Neutral   Neutral
+                                                Email us at support@shop.com for assistance.  Neutral   Neutral
+                  Brilliant speaker, loud and clear with impressive bass. Worth every rupee. Positive  Negative
+             Worst phone I have ever bought, the screen cracked and the battery is terrible. Negative  Negative
+                                                          Visit www.flipkart.com for offers.  Neutral   Neutral
+                  This coffee maker is fantastic. Brews quickly and the coffee tastes great. Positive  Positive
+                 I ordered the blue one, and the tracking page shows it is out for delivery.  Neutral   Neutral
+                           This model is available in black, silver and blue colour options.  Neutral   Neutral
+              Bad customer care, they kept me waiting for hours and never solved my problem. Negative  Negative
+                   Great value for money. The fabric is soft and the stitching is very neat. Positive  Positive
+                            This product is manufactured in India and contains no batteries.  Neutral  Negative 
 
-Accuracy: 0.3333 
+Accuracy: 0.7222 
 
 Classification Report:
               precision    recall  f1-score   support
 
-    Negative       0.20      0.25      0.22         4
-     Neutral       0.40      0.50      0.44         4
-    Positive       0.50      0.25      0.33         4
+    Negative       0.69      0.92      0.79        12
+     Neutral       0.70      0.58      0.64        12
+    Positive       0.80      0.67      0.73        12
 
-    accuracy                           0.33        12
-   macro avg       0.37      0.33      0.33        12
-weighted avg       0.37      0.33      0.33        12
+    accuracy                           0.72        36
+   macro avg       0.73      0.72      0.72        36
+weighted avg       0.73      0.72      0.72        36
 
 Confusion Matrix (rows = actual, columns = predicted):
           Negative  Neutral  Positive
-Negative         1        2         1
-Neutral          2        2         0
-Positive         2        1         1 
+Negative        11        1         0
+Neutral          3        7         2
+Positive         2        2         8 
 
 Predictions for new unseen reviews:
-  "Absolutely fantastic phone, the camera and battery are superb!" -> Positive (confidence 0.43)
-  "Terrible quality, it broke in two days. Very disappointed." -> Negative (confidence 0.48)
-  "The box contains a charger and the warranty card." -> Neutral (confidence 0.48)
+  "Absolutely fantastic phone, the camera and battery are superb!" -> Positive (confidence 0.48)
+  "Terrible quality, it broke in two days. Very disappointed." -> Negative (confidence 0.67)
+  "The box contains a charger and the warranty card." -> Neutral (confidence 0.55)

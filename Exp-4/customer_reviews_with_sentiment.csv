@@ -59,3 +59,123 @@ ReviewID,Review,Sentiment
 58,"The product comes with a two pin plug and requires a standard 230 volt socket.",Neutral
 59,"Sound is fine but the build feels average, nothing special, does the job.",Neutral
 60,"The app is available on Android and iOS. Download it from the official store.",Neutral
+61,"Great phone! The camera is excellent and the battery easily lasts all day.",Positive
+62,"I love this jacket, it is warm, light and looks really stylish.",Positive
+63,"Excellent product and fast delivery. Very happy with the purchase!",Positive
+64,"The best earbuds I have used so far, crystal clear sound and a comfortable fit.",Positive
+65,"Superb quality! The material feels premium and it looks even better in person.",Positive
+66,"Really good value. Works perfectly and setup took only five minutes.",Positive
+67,"Awesome TV, the picture is sharp and the colours are vibrant. Love it!",Positive
+68,"This coffee maker is fantastic. Brews quickly and the coffee tastes great.",Positive
+69,"Very impressed with the build quality. It feels solid and durable.",Positive
+70,"Great seller, the item arrived well packed and works like a charm.",Positive
+71,"I am delighted with this backpack. Lots of space, strong zips and very comfortable straps.",Positive
+72,"Perfect gift! My mother loves it and says it is the nicest thing she has received.",Positive
+73,"Brilliant speaker, loud and clear with impressive bass. Worth every rupee.",Positive
+74,"The moisturiser is wonderful, my skin feels soft and fresh all day.",Positive
+75,"Smooth performance, no lag at all, and the display is beautiful. Highly recommend this laptop.",Positive
+76,"Happy customer here. Product quality is top notch and the price is reasonable.",Positive
+77,"Excellent camera and lovely design. This is the best phone in this range.",Positive
+78,"The mixer works great, very powerful and easy to use. Totally satisfied.",Positive
+79,"Nice and sturdy table, assembly was simple and it looks elegant in my room.",Positive
+80,"Outstanding service! The replacement came quickly and the team was very helpful.",Positive
+81,"Terrific book, well written and impossible to put down. I loved every chapter.",Positive
+82,"Very comfortable running shoes with great grip. I am really pleased.",Positive
+83,"Good product, good packaging and quick shipping. Will order again.",Positive
+84,"This power bank is amazing, it charges my phone three times and stays cool.",Positive
+85,"Absolutely love the fragrance, it lasts all day and smells lovely.",Positive
+86,"Wow, what a screen! Bright, sharp and smooth. Very happy with this monitor.",Positive
+87,"The pressure cooker is excellent, cooks fast and feels safe to use.",Positive
+88,"Really nice fabric and perfect stitching, exactly what I was looking for.",Positive
+89,"Splendid purchase. The vacuum is powerful and light, my house is spotless.",Positive
+90,"Fast, reliable and easy to install. This is a great router for the price.",Positive
+91,"Beautiful watch, looks luxurious and keeps perfect time. Great gift.",Positive
+92,"The sofa is super comfortable and the colour matches my living room perfectly.",Positive
+93,"Great sound, great battery, great price. I could not ask for more.",Positive
+94,"The keyboard feels fantastic to type on and the keys are quiet. Very satisfied.",Positive
+95,"Amazing offers and the product is genuine. Delivery was quick and hassle free.",Positive
+96,"Very useful app, clean interface and works flawlessly. Five stars.",Positive
+97,"Awesome mattress, firm yet soft. Woke up without any back pain. Love it!",Positive
+98,"Superb printer, prints sharp and fast, and the wireless setup was effortless.",Positive
+99,"Lovely design and premium finish. It looks exactly like the photos and works well.",Positive
+100,"Delighted with the quality of this pressure washer, it cleans everything quickly.",Positive
+101,"Worst phone I have ever bought, the screen cracked and the battery is terrible.",Negative
+102,"Very bad quality. The zip broke on the first day and the stitching came off.",Negative
+103,"Total waste of money, it stopped working after a week and support ignores me.",Negative
+104,"Poor sound and a loud hiss in the background. I regret buying these earbuds.",Negative
+105,"Terrible experience, the seller sent the wrong item and refused to refund.",Negative
+106,"The battery drains very fast and the phone gets hot. Completely disappointed.",Negative
+107,"Horrible packaging, the box was crushed and the product arrived broken.",Negative
+108,"Bad product, cheap plastic and it feels like it will snap any moment.",Negative
+109,"The laptop is slow, noisy and the keys are hard. Not worth the money.",Negative
+110,"Awful smell from the material and the colour ran in the first wash. Poor quality.",Negative
+111,"I am very unhappy. The delivery took three weeks and the item was scratched.",Negative
+112,"Useless app, it crashes every time I open it and the support never responds.",Negative
+113,"Disappointing camera, blurry photos even in daylight. Do not buy this phone.",Negative
+114,"The blender leaks from the bottom and the motor burned out in two days. Terrible.",Negative
+115,"Poor fit and uncomfortable. The shoes hurt my feet and the sole is peeling.",Negative
+116,"Fake and overpriced. The original costs half and this one looks like a cheap copy.",Negative
+117,"Very slow internet and it keeps disconnecting. Worst router ever, complete garbage.",Negative
+118,"The screen has dead pixels and the seller will not replace it. Extremely frustrating.",Negative
+119,"Bad customer care, they kept me waiting for hours and never solved my problem.",Negative
+120,"The mattress is too hard and lumpy, and it gave me back pain. Very poor.",Negative
+121,"Stopped charging after ten days. Pathetic quality and no proper warranty support.",Negative
+122,"Terrible sofa, the fabric tore quickly and the cushions lost their shape in a month.",Negative
+123,"The product is defective and the instructions are confusing. Waste of my time.",Negative
+124,"Very noisy fan and it wobbles badly. I want my money back.",Negative
+125,"Disgusting taste and it expired earlier than the date printed. Never again.",Negative
+126,"The book is boring, badly edited and full of mistakes. Completely disappointing.",Negative
+127,"The watch strap broke within a week and the display is dim. Poor build.",Negative
+128,"Overheats while charging and smells like burning plastic. Dangerous and very bad.",Negative
+129,"Irritating keyboard, keys stick and some stopped working. Terrible value.",Negative
+130,"I hate this vacuum cleaner. It is weak, loud and the dust bag tears every time.",Negative
+131,"Awful sound quality and the bass is muddy. Complete waste, returning it.",Negative
+132,"The tablet freezes all the time and the touch is laggy. Very disappointed.",Negative
+133,"Shameful service. They delivered a used product in a torn box.",Negative
+134,"The colour faded after the first wash and the shirt shrank. Poor material.",Negative
+135,"Cheap quality, sharp edges and rusted parts. Do not waste your money.",Negative
+136,"Not good at all. The printer jams constantly and the ink runs out quickly.",Negative
+137,"Speaker stopped working after two days and there is no response from the seller.",Negative
+138,"Really bad app, it is full of ads and keeps logging me out. Uninstalled.",Negative
+139,"Very poor delivery, the courier lost my package and support was rude.",Negative
+140,"Bad experience overall, the product looks nothing like the photos. Regret it.",Negative
+141,"The phone comes with 128 GB storage and supports dual SIM cards.",Neutral
+142,"Delivery to metro cities is usually completed within two days of dispatch.",Neutral
+143,"This charger has a USB-C port and an output of 20 watts.",Neutral
+144,"The shirt is available in sizes small, medium, large and extra large.",Neutral
+145,"To reset the device, press and hold the power button for ten seconds.",Neutral
+146,"The order will be shipped from the Hyderabad warehouse tomorrow.",Neutral
+147,"Payment can be made using credit card, debit card, UPI or net banking.",Neutral
+148,"The television has a 43 inch screen and three HDMI ports.",Neutral
+149,"Invoice number 48213 was generated on the fifteenth of March.",Neutral
+150,"For bulk orders, contact our sales team at sales@example.com.",Neutral
+151,"The package includes one water bottle, a lid and a cleaning brush.",Neutral
+152,"Warranty claims must be made through the service centre with the original bill.",Neutral
+153,"The smartwatch is compatible with Android 8 and above and iOS 12 and above.",Neutral
+154,"I received the parcel on Friday morning from the courier.",Neutral
+155,"The book has 320 pages and was published in 2019.",Neutral
+156,"This product is manufactured in India and contains no batteries.",Neutral
+157,"Follow us on social media to know about upcoming sale dates.",Neutral
+158,"The laptop bag is made of polyester and has two compartments.",Neutral
+159,"My order number is 77120, please update me on the delivery date.",Neutral
+160,"The headphones use Bluetooth 5.0 and have a range of about ten metres.",Neutral
+161,"Cancellation is possible until the item has been dispatched.",Neutral
+162,"The store is open from ten in the morning until nine in the evening.",Neutral
+163,"The speaker is powered by a rechargeable battery and comes in a cardboard box.",Neutral
+164,"I ordered the blue one, and the tracking page shows it is out for delivery.",Neutral
+165,"The camera has a 48 megapixel sensor and records video at 4K resolution.",Neutral
+166,"The mattress is queen size and measures 198 cm by 152 cm.",Neutral
+167,"Use the coupon code SAVE10 at checkout to apply the discount.",Neutral
+168,"The refund will be credited to the original payment method in five to seven working days.",Neutral
+169,"The blender has three speed settings and a 1.5 litre jar.",Neutral
+170,"Please download the installation guide from the support page.",Neutral
+171,"I bought this yesterday and have not had time to try it yet.",Neutral
+172,"The fabric is 100 percent cotton and the care label says machine wash cold.",Neutral
+173,"The seller is registered in Mumbai and offers GST invoices.",Neutral
+174,"This is the second generation model, released last year.",Neutral
+175,"The router supports both 2.4 GHz and 5 GHz frequency bands.",Neutral
+176,"The bundle contains a keyboard, a mouse and a USB receiver.",Neutral
+177,"Item was purchased during the festival sale for 1,499 rupees.",Neutral
+178,"The printer connects through USB or Wi-Fi and uses cartridge model 680.",Neutral
+179,"The delivery person called before arriving and left the package at the reception.",Neutral
+180,"The app requires an internet connection and about 200 MB of free storage.",Neutral
