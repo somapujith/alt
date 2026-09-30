@@ -1,0 +1,37 @@
+===== WORD2VEC MODEL INFORMATION =====
+Vocabulary size: 42
+Embedding dimension: 50
+
+Embedding of 'king' (first 10 values):
+[-0.0044  0.0101 -0.02    0.0194  0.0044 -0.0161 -0.0115  0.0025 -0.0107
+ -0.0134]
+
+===== MOST SIMILAR WORDS =====
+
+Top 3 words similar to 'king':
+  son: 0.5700
+  palace: 0.4508
+  the: 0.4473
+
+Top 3 words similar to 'queen':
+  royal: 0.4381
+  the: 0.4339
+  king: 0.4274
+
+Top 3 words similar to 'apple':
+  the: 0.3646
+  son: 0.3505
+  girl: 0.3414
+
+Top 3 words similar to 'dog':
+  fruit: 0.3648
+  kingdom: 0.3539
+  is: 0.3129
+
+===== SEMANTIC SIMILARITY =====
+Similarity(king, queen) = 0.427
+Similarity(man, woman) = -0.039
+Similarity(king, apple) = 0.280
+Similarity(dog, cat) = 0.046
+
+Word2Vec model saved successfully.
