@@ -1,0 +1,38 @@
+===== BEFORE PCA =====
+Number of documents : 12
+Number of features  : 44
+TF-IDF matrix shape : (12, 44)
+
+===== AFTER PCA =====
+Reduced matrix shape       : (12, 2)
+Explained variance ratio   : [0.1937 0.1321]
+Total variance preserved   : 0.3258
+
+===== PCA TRANSFORMED FEATURES =====
+             Principal_Component_1  Principal_Component_2
+Document_1                 -0.2990                 0.3489
+Document_2                 -0.3753                -0.3696
+Document_3                  0.6531                 0.0076
+Document_4                 -0.0938                 0.3592
+Document_5                 -0.3541                -0.6262
+Document_6                  0.6234                -0.0708
+Document_7                 -0.3435                 0.4760
+Document_8                  0.0500                -0.3844
+Document_9                 -0.4018                 0.0370
+Document_10                 0.2130                -0.2068
+Document_11                 0.5755                 0.2000
+Document_12                -0.2474                 0.2292
+
+===== EXTRA: CUMULATIVE EXPLAINED VARIANCE (ALL COMPONENTS) =====
+PC1..PC1 : 0.1937
+PC1..PC2 : 0.3258
+PC1..PC3 : 0.4399
+PC1..PC4 : 0.5503
+PC1..PC5 : 0.6430
+PC1..PC6 : 0.7223
+PC1..PC7 : 0.7980
+PC1..PC8 : 0.8682
+PC1..PC9 : 0.9190
+PC1..PC10: 0.9658
+PC1..PC11: 1.0000
+PC1..PC12: 1.0000
