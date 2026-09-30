@@ -1,0 +1,49 @@
+Dataset shape: (51, 2)
+category
+Politics      17
+Sports        17
+Technology    17
+Name: count, dtype: int64
+
+Accuracy: 0.6875
+
+Classification Report:
+               precision    recall  f1-score   support
+
+    Politics       1.00      0.33      0.50         6
+      Sports       0.71      1.00      0.83         5
+  Technology       0.57      0.80      0.67         5
+
+    accuracy                           0.69        16
+   macro avg       0.76      0.71      0.67        16
+weighted avg       0.78      0.69      0.66        16
+
+
+Confusion Matrix:
+ [[2 1 3]
+ [0 5 0]
+ [0 1 4]]
+
+Actual vs Predicted:
+         Actual   Predicted
+43  Technology  Technology
+40  Technology  Technology
+46  Technology      Sports
+12    Politics      Sports
+24      Sports      Sports
+31      Sports      Sports
+17      Sports      Sports
+32      Sports      Sports
+3     Politics    Politics
+30      Sports      Sports
+13    Politics  Technology
+8     Politics  Technology
+49  Technology  Technology
+6     Politics    Politics
+47  Technology  Technology
+4     Politics  Technology
+
+New Text Predictions:
+Artificial Intelligence is changing industries -> Technology
+The football team won the championship -> Sports
+The government passed a budget -> Politics
