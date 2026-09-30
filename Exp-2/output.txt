@@ -1,0 +1,59 @@
+Cleaned Reviews:
+0     absolut love mobil 😍 work perfectli visit http...
+1                         worst product ever wast money
+2                     batteri backup good deliveri late
+3                       email u support shop.com assist
+4                            b excel /b qualiti product
+5                                         price ₹25,999
+6                                       phone awesom 😊😊
+7                          visit www.flipkart.com offer
+8                                  camera qualiti 10/10
+9                             n't recommend product ...
+10                             laptop amaz fast perform
+11                                      call 9876543210
+12                visit websit http //example.com today
+13                             bad packag product damag
+14                           deliveri time excel servic
+Name: Cleaned_Review, dtype: str
+
+Vocabulary:
+['10' '25' '9876543210' '999' 'absolut' 'amaz' 'amazon' 'assist' 'awesom'
+ 'backup' 'bad' 'batteri' 'call' 'camera' 'com' 'damag' 'deliveri' 'email'
+ 'ever' 'example' 'excel' 'fast' 'flipkart' 'good' 'http' 'in' 'laptop'
+ 'late' 'love' 'mobil' 'money' 'offer' 'packag' 'perfectli' 'perform'
+ 'phone' 'price' 'product' 'qualiti' 'recommend' 'servic' 'shop' 'support'
+ 'time' 'today' 'visit' 'wast' 'websit' 'work' 'worst' 'www']
+
+Bag-of-Words Matrix:
+[[0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 0 0 0 1 0 0
+  0 0 0 0 0 0 0 0 0 1 0 0 1 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0
+  0 1 0 0 0 0 0 0 0 0 1 0 0 1 0]
+ [0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  0 0 0 0 0 1 1 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  0 1 1 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  1 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0
+  0 0 0 0 0 0 0 0 0 1 0 0 0 0 1]
+ [2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  0 0 1 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  0 1 0 1 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0
+  0 0 0 0 0 0 0 0 1 1 0 1 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0
+  0 1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  0 0 0 0 1 0 0 1 0 0 0 0 0 0 0]]
+
+Bag-of-Words features saved as bow_features.csv
