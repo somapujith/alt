@@ -1,0 +1,61 @@
+ReviewID,Review,Sentiment
+1,"I absolutely loved this mobile!! 😍 It works perfectly. Visit https://amazon.in",Positive
+2,"Worst product ever!!! Waste of money!!!!",Negative
+3,"Battery backup is good, but delivery was late.",Neutral
+4,"Email us at support@shop.com for assistance.",Neutral
+5,"<b>Excellent</b> quality product!!",Positive
+6,"Price is ₹25,999 only!!!",Neutral
+7,"This phone is awesome 😊😊",Positive
+8,"Visit www.flipkart.com for offers.",Neutral
+9,"Camera quality is 10/10!!!",Positive
+10,"I don't recommend this product...",Negative
+11,"The laptop is AMAZING!!! Fast performance.",Positive
+12,"Call me at 9876543210.",Neutral
+13,"Visit our website: https://example.com today!",Neutral
+14,"Very bad packaging :( Product damaged.",Negative
+15,"Delivery was on time, excellent service!!",Positive
+16,"Fantastic headphones, the sound is crisp and the bass is deep. Totally worth the money!",Positive
+17,"Super happy with this vacuum cleaner. It picks up everything and is really quiet.",Positive
+18,"Great value for money. The fabric is soft and the stitching is very neat.",Positive
+19,"Love the display on this tablet, colours look stunning and it never lags.",Positive
+20,"Brilliant blender! Crushes ice in seconds and is easy to clean. Highly recommended.",Positive
+21,"The battery lasts two full days and the screen is gorgeous. Very satisfied with my purchase.",Positive
+22,"Customer support solved my issue within minutes. Wonderful experience, thank you!",Positive
+23,"Perfect fit and very comfortable. I will definitely buy from this seller again.",Positive
+24,"Amazing smartwatch, tracks my workouts accurately and looks elegant on the wrist.",Positive
+25,"Sturdy build and easy setup. This is the best router I have ever owned.",Positive
+26,"Delivered a day early and beautifully packed. The product is exactly as described. Very pleased!",Positive
+27,"Excellent sound quality for the price, and the Bluetooth connection is rock solid.",Positive
+28,"My kids adore this toy, it is safe, colourful and durable. Five stars!",Positive
+29,"Wonderful mattress, I sleep so much better now. Great comfort and support.",Positive
+30,"The phone stopped working after two days. Terrible quality, complete waste of money.",Negative
+31,"Very disappointed. The charger overheats and the cable broke within a week.",Negative
+32,"Awful customer service, nobody replied to my complaints for weeks. Never buying again.",Negative
+33,"The shoes fell apart after a month of use. Cheap material and poor stitching.",Negative
+34,"Received a damaged and dirty box, the item inside was scratched. Horrible experience.",Negative
+35,"Screen is dim, the touch is unresponsive and the battery drains in three hours. Do not buy.",Negative
+36,"Fake product! It looks nothing like the pictures and smells bad. Total scam.",Negative
+37,"Extremely slow laptop that freezes constantly. Regret buying it.",Negative
+38,"The delivery was very late and the packaging was torn. Really unhappy with this seller.",Negative
+39,"Uncomfortable and overpriced. The strap snapped on the first day.",Negative
+40,"Speaker crackles at high volume and the sound is muffled. Very poor quality.",Negative
+41,"Refund process was a nightmare, and the replacement they sent was also defective.",Negative
+42,"Terrible mixer grinder, it makes a loud noise and stopped working after two uses.",Negative
+43,"Bad experience. The size chart is wrong and the colour is faded. Disappointed.",Negative
+44,"I hate this printer. The ink leaks everywhere and it jams all the time.",Negative
+45,"Not worth the price at all. It is flimsy, ugly and stopped charging quickly.",Negative
+46,"Cheap plastic, bad smell and it broke on the second wash. Would not recommend.",Negative
+47,"The package contains a phone, a charger, a USB cable and a user manual.",Neutral
+48,"This model is available in black, silver and blue colour options.",Neutral
+49,"The laptop has 16 GB RAM, a 512 GB SSD and a 15.6 inch display.",Neutral
+50,"Order was placed on Monday and the tracking number was sent by email.",Neutral
+51,"The warranty for this product is one year from the date of purchase.",Neutral
+52,"Please refer to the user manual for instructions on how to pair the device.",Neutral
+53,"Item weighs 450 grams and measures 20 cm by 10 cm by 5 cm.",Neutral
+54,"Cash on delivery is available for orders above 500 rupees in selected cities.",Neutral
+55,"I bought this for my brother, he has not opened the box yet.",Neutral
+56,"The seller ships from Bengaluru and delivery usually takes three to five days.",Neutral
+57,"Returns are accepted within 7 days if the seal is intact.",Neutral
+58,"The product comes with a two pin plug and requires a standard 230 volt socket.",Neutral
+59,"Sound is fine but the build feels average, nothing special, does the job.",Neutral
+60,"The app is available on Android and iOS. Download it from the official store.",Neutral

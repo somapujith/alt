@@ -1,0 +1,48 @@
+Dataset shape: (60, 3)
+Class distribution:
+ Sentiment
+Positive    20
+Negative    20
+Neutral     20
+Name: count, dtype: int64 
+
+Train size: 48  Test size: 12
+
+Predictions on the test set:
+                                                                                 Review   Actual Predicted
+      Refund process was a nightmare, and the replacement they sent was also defective. Negative   Neutral
+     Excellent sound quality for the price, and the Bluetooth connection is rock solid. Positive  Positive
+                                           Email us at support@shop.com for assistance.  Neutral   Neutral
+            Please refer to the user manual for instructions on how to pair the device.  Neutral   Neutral
+                                                             Camera quality is 10/10!!! Positive   Neutral
+          The shoes fell apart after a month of use. Cheap material and poor stitching. Negative  Negative
+              Great value for money. The fabric is soft and the stitching is very neat. Positive  Negative
+                       Extremely slow laptop that freezes constantly. Regret buying it. Negative  Positive
+                                         Battery backup is good, but delivery was late.  Neutral  Negative
+         The product comes with a two pin plug and requires a standard 230 volt socket.  Neutral  Negative
+Fantastic headphones, the sound is crisp and the bass is deep. Totally worth the money! Positive  Negative
+  Received a damaged and dirty box, the item inside was scratched. Horrible experience. Negative   Neutral 
+
+Accuracy: 0.3333 
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Negative       0.20      0.25      0.22         4
+     Neutral       0.40      0.50      0.44         4
+    Positive       0.50      0.25      0.33         4
+
+    accuracy                           0.33        12
+   macro avg       0.37      0.33      0.33        12
+weighted avg       0.37      0.33      0.33        12
+
+Confusion Matrix (rows = actual, columns = predicted):
+          Negative  Neutral  Positive
+Negative         1        2         1
+Neutral          2        2         0
+Positive         2        1         1 
+
+Predictions for new unseen reviews:
+  "Absolutely fantastic phone, the camera and battery are superb!" -> Positive (confidence 0.43)
+  "Terrible quality, it broke in two days. Very disappointed." -> Negative (confidence 0.48)
+  "The box contains a charger and the warranty card." -> Neutral (confidence 0.48)
