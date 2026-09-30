@@ -6,41 +6,71 @@ Dataset Preview
 3  Great service, the relationship manager always...  Positive
 4  Opening a savings account online took less tha...  Positive
 
-Accuracy: 0.3333333333333333
+Accuracy: 0.5777777777777777
 
 Classification Report:
               precision    recall  f1-score   support
 
-    Negative       0.38      0.38      0.38         8
-    Positive       0.29      0.29      0.29         7
+    Negative       0.56      0.68      0.61        22
+    Positive       0.61      0.48      0.54        23
 
-    accuracy                           0.33        15
-   macro avg       0.33      0.33      0.33        15
-weighted avg       0.33      0.33      0.33        15
+    accuracy                           0.58        45
+   macro avg       0.58      0.58      0.57        45
+weighted avg       0.58      0.58      0.57        45
 
 Confusion Matrix:
-[[3 5]
- [5 2]]
+[[15  7]
+ [12 11]]
 
 Actual vs Predicted:
       Actual Predicted
-0   Positive  Positive
-1   Negative  Positive
-2   Negative  Positive
-3   Negative  Negative
+0   Positive  Negative
+1   Positive  Positive
+2   Negative  Negative
+3   Positive  Negative
 4   Positive  Negative
-5   Negative  Negative
-6   Negative  Negative
-7   Negative  Positive
-8   Negative  Positive
-9   Positive  Positive
-10  Positive  Negative
-11  Positive  Negative
+5   Negative  Positive
+6   Positive  Negative
+7   Negative  Negative
+8   Positive  Positive
+9   Positive  Negative
+10  Negative  Positive
+11  Positive  Positive
 12  Negative  Positive
 13  Positive  Negative
-14  Positive  Negative
+14  Positive  Positive
+15  Positive  Negative
+16  Negative  Negative
+17  Positive  Positive
+18  Positive  Positive
+19  Negative  Negative
+20  Negative  Negative
+21  Negative  Negative
+22  Negative  Negative
+23  Negative  Negative
+24  Negative  Negative
+25  Negative  Negative
+26  Negative  Negative
+27  Negative  Positive
+28  Negative  Negative
+29  Negative  Negative
+30  Positive  Positive
+31  Positive  Positive
+32  Positive  Negative
+33  Positive  Positive
+34  Negative  Negative
+35  Negative  Positive
+36  Positive  Negative
+37  Negative  Positive
+38  Positive  Negative
+39  Negative  Negative
+40  Negative  Positive
+41  Positive  Negative
+42  Positive  Positive
+43  Positive  Positive
+44  Positive  Negative
 
 Predictions on New Reviews:
-The customer support was excellent. --> Positive
-Hidden charges were very disappointing. --> Positive
+The customer support was excellent. --> Negative
+Hidden charges were very disappointing. --> Negative
 Internet banking is easy to use. --> Negative
