@@ -1,0 +1,9 @@
+Original: excellent product with great quality
+Cleaned : excellent product great quality
+Prediction: Positive
+Positive probability: 0.593
+
+Original: terrible service and poor product
+Cleaned : terrible service poor product
+Prediction: Negative
+Positive probability: 0.424

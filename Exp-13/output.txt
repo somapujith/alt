@@ -1,0 +1,31 @@
+Accuracy : 0.6
+Precision: 0.5
+Recall   : 1.0
+F1-Score : 0.6667
+ROC-AUC  : 1.0
+
+Confusion Matrix:
+[[1 2]
+ [0 2]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Negative       1.00      0.33      0.50         3
+    Positive       0.50      1.00      0.67         2
+
+    accuracy                           0.60         5
+   macro avg       0.75      0.67      0.58         5
+weighted avg       0.80      0.60      0.57         5
+
+
+============================================================
+EXTRA: CONFUSION MATRIX AS A LABELED TABLE (not in lab PDF)
+============================================================
+                 Predicted Negative  Predicted Positive
+Actual Negative                   1                   2
+Actual Positive                   0                   2
+
+============================================================
+LAB COMPLETED SUCCESSFULLY
+============================================================

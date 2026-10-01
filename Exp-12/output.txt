@@ -1,0 +1,18 @@
+Number of documents: 9
+Vocabulary size: 33
+
+Discovered Topics:
+Topic 0: football, team, goal, player, stadium, training
+Topic 1: learning, model, algorithm, intelligence, machine, data
+Topic 2: shopping, online, delivery, product, discount, customer
+
+Dominant topic for each document:
+Document 1: Topic 0 (probability=0.916)
+Document 2: Topic 0 (probability=0.916)
+Document 3: Topic 0 (probability=0.905)
+Document 4: Topic 1 (probability=0.916)
+Document 5: Topic 1 (probability=0.916)
+Document 6: Topic 1 (probability=0.916)
+Document 7: Topic 2 (probability=0.916)
+Document 8: Topic 2 (probability=0.888)
+Document 9: Topic 2 (probability=0.904)

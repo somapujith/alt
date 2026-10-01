@@ -1,0 +1,26 @@
+TF-IDF matrix shape: (10, 24)
+Model trained. Training accuracy: 1.0
+
+============================================================
+SHAP EXPLANATION FOR DOCUMENT 0
+============================================================
+
+Text explained:
+excellent amazing wonderful great product
+
+Top SHAP feature contributions:
+excellent       +0.1224
+amazing         +0.0874
+great           +0.0874
+wonderful       +0.0874
+bad             +0.0421
+terrible        +0.0421
+good            -0.0418
+unhappy         +0.0247
+
+Prediction: Positive
+Positive probability: 0.6124
+
+============================================================
+LAB COMPLETED SUCCESSFULLY
+============================================================
